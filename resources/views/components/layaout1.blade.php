@@ -7,10 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Checkout example · Bootstrap v5.2</title>
+    <title>Signin Template · Bootstrap v5.2</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
-
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -22,7 +21,6 @@
     <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -76,16 +74,10 @@
         }
     </style>
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
 </head>
-<body class="bg-light">
-<div class="container">
-    @yield('content')
+<body class="text-center">
 
-    @yield('footer')
-</div>
-
-<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="form-validation.js"></script>
+{{$content}}
 </body>
 </html>
